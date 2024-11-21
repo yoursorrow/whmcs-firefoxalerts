@@ -1,0 +1,1 @@
+WHMCS Alerts is a Firefox extension designed to monitor WHMCS support ticket tables for specific statuses such as "Customer-Reply" and "Open". When these statuses are detected, the extension plays an alert sound to notify users.
