@@ -1,0 +1,34 @@
+{
+    "manifest_version": 2,
+    "name": "WHMCS Alerts",
+    "version": "1.2",
+    "description": "Plays a sound when a table row contains 'Customer-Reply' or 'Open'.",
+    "permissions": [
+      "activeTab",
+      "notifications",
+      "storage"
+    ],
+    "browser_action": {
+      "default_icon": {
+        "48": "icons/icon.png",
+        "96": "icons/icon.png"
+      },
+      "default_title": "WHMCS Alerts",
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "run_at": "document_end"
+      }
+    ],
+    "web_accessible_resources": [
+      "sound/alert.mp3"
+    ],
+    "icons": {
+      "48": "icons/icon.png",
+      "96": "icons/icon.png"
+    }
+  }
+  
